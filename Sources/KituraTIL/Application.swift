@@ -28,7 +28,7 @@ public class App {
 
 private extension App {
     func postInit() {
-        let connectionProperties = ConnectionProperties(host: "localhost", port: 5984, secured: false)
+        let connectionProperties = ConnectionProperties(host: "database", port: 5984, secured: false, username: "swift_user", password: "harbour7DYESTUFF.malt")
         
         client = CouchDBClient(connectionProperties: connectionProperties)
         
